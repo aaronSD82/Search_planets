@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search planets</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+
+    <div id="information">
+        
+        <aside id="query_params">
+            <label for="planet_name">Nombre&nbsp;<small>(Opcional)</small></label>
+            <input type="text" id="planet_name">
+            <label for="min_mass">Masa mínima<small>(Opcional)</small></label>
+            <input type="number" id="min_mass" min="0" placeholder="Masa en relación a la de Júpiter. Ej: 1.5">
+            <label for="max_mass">Masa máxima<small>(Opcional)</small></label>
+            <input type="number" id="max_mass" min="0" placeholder="Masa en relación a la de Júpiter. Ej: 6">
+            <label for="min_radius">Radio mínimo<small>(Opcional)</small></label>
+            <input type="number" id="min_radius" min="0" placeholder="Radio minimo en relación a Júpiter. Ej: 2.25">
+            <label for="max_radius">Radio máximo<small>(Opcional)</small></label>
+            <input type="number" id="max_radius" min="0" placeholder="Radio máximo en relación a Júpiter.Ej: 4.1">
+            <label for="min_period">Periodo mínimo<small>(Opcional)</small></label>
+            <input type="number" id="min_period" min="0" placeholder="Vuelta a su estrella en días. Ej: 54">
+            <label for="max_period">Periodo máximo<small>(Opcional)</small></label>
+            <input type="number" id="max_period" min="0" placeholder="Vuelta a su estrella en días. Ej: 54">
+            <label for="min_temperature">Temperatura mínima(ºK)<small>(Opcional)</small></label>
+            <input type="number" id="min_temperature" min="0">
+            <label for="max_temperature">Temperatura máxima(ºK)<small>(Opcional)</small></label>
+            <input type="number" id="max_temperature" min="0">
+            <label for="min_distance_light_year">Distancia mínima(años-luz)<small>(Opcional)</small></label>
+            <input type="number" id="min_distance_light_year" min="0">
+            <label for="max_distance_light_year">Distancia máxima(años-luz)<small>(Opcional)</small></label>
+            <input type="number" id="max_distance_light_year" min="0">
+            <div id="buttons">
+                <button id="search">Presione para b&uacute;squeda</button>
+                <button id="more_search">M&aacute;s resultados</button>
+            </div>
+            <p id="counts_planets"></p>
+            <div id="buttons2">
+                <button id="before_planet">Anterior planeta</button>
+                <p id="counter"></p>
+                <button id="next_planet">Siguiente planeta</button>
+            </div>
+        </aside>
+
+        <div class="planets" id="planets">
+            <p>Júpiter</p>
+            <div id="jupiter"></div>
+            <div id="content_other_planet">
+                <div id="other_planet"></div>
+            </div>
+        </div>
+        <div>Nombre del planeta:&nbsp;<span id="name"></span></div>
+        <div>Masa del planeta en veces la masa de Júpiter:&nbsp;<span id="mass"></span></div>
+        <div>Radio del planeta en veces el radio de Júpiter:&nbsp;<span id="radius"></span></div>
+        <div id="visual_period">
+            <div id="solar_period">
+                <div id="orbit_planet"></div>
+            </div>
+            <div id="sun">
+                <img src="./img/sun.jpg" alt="sol">
+            </div> 
+            <p>Periodo:&nbsp;<span id="period"></span></p>
+        </div>
+        <div>Eje mayor de la órbita en unidades astronómicas (UA):&nbsp;<span id="major_axis"></span></div>
+        <div>Temperatura del planeta en ºK:&nbsp;<span id="temperature"></span></div>
+        <div>Distancia desde la Tierra en años-luz:&nbsp;<span id="distance"></span></div>
+        <div>Masa de su estrella en veces la de nuestro sol:&nbsp;<span id="star_mass"></span></div>
+        <div>Temperatura de su estrella en ºK:&nbsp;<span id="star_temperature"></span></div>
+    </div>
+</body>
+
+<script src="./index.js" type="module"></script>
+</html>
