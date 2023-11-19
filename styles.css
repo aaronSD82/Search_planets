@@ -63,6 +63,7 @@ aside {
     grid-row: 1/13;
     border: 1px wheat solid;
     border-radius: 5px;
+    padding: 0 5px;
 
 
 }
@@ -72,7 +73,7 @@ aside {
     display: flex;
     grid-row: 11/13;
     justify-content: space-between;
-    margin-top: 20%;
+    margin-top: 15px;
     height: 45px;
 }
 
