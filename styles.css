@@ -73,8 +73,9 @@ aside {
     display: flex;
     grid-row: 11/13;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 10px;
     height: 45px;
+    margin-bottom: 5px;
 }
 
 input{
