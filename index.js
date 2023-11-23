@@ -43,6 +43,7 @@ async function launchQuery(offsetSet) {
                 offset = 0;
                 actualPage = 0;
                 maxPage = 0;
+                otherPlanet.style.display = "flex";
             }
 
         }
