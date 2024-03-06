@@ -9,7 +9,7 @@ let dataJson;
 const options = {
     method: 'GET',
     headers: {
-        'X-RapidAPI-Key': 'ed8749a09emshac1fc8abd0efcdbp1610c5jsnb57fbb62456c',
+        'X-RapidAPI-Key': '',
         'X-RapidAPI-Host': 'planets-by-api-ninjas.p.rapidapi.com'
     }
 };
